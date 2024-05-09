@@ -1,5 +1,4 @@
 ﻿using OOPS_revise;
-using System.ComponentModel.DataAnnotations;
 
 namespace Revising {
 
@@ -7,11 +6,15 @@ namespace Revising {
     {
         public static void Main()
         {
-            Student student = new Student();
-            student.Accept(2, "noman");
-            student.display();
+            //Student student = new Student();
+            //student.Accept(2, "noman");
+            //student.display();
 
-            Employee emp = new Employee(1, "noman", 22);
+            Employee emp = new Employee("A","B","C");
+            Employee emp1 = new Employee(1, "B", 20);
+            double salary = Employee.getSalary();
+            
+            Console.WriteLine("Salary: " + salary);
         }
     }
 }
