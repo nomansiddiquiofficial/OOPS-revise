@@ -27,7 +27,9 @@ namespace OOPS_revise
             Console.WriteLine();
             double balance = account.getDepositMoney();
             Console.WriteLine(balance);
-
+            Employee1 employee1 = new Employee1(1,"noman",66,50000);
+            employee1.showEmployeeDetails();
+            
 
         }
     }
